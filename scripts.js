@@ -39,3 +39,26 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+// configuramos el contacto por mail
+function mostrarDatos(){
+    var nombre= document.getElementById('nombre').value;
+    var correo= document.getElementById('correo').value;
+    var telefono= document.getElementById('telefono').value;
+    var tema= document.getElementById('Tema').value;
+    var mensaje= document.getElementById('mensaje').value;
+
+    console.log("Nombre: " + nombre);
+    console.log("correo: " + correo);
+    console.log("telefono: " + telefono);
+    console.log("tema: " + tema);
+    console.log("mensaje: " + mensaje);
+
+    limpiarFormulario();
+}
+
+//funcion para limpiar la pantalla del formulario
+
+function limpiarFormulario(){
+  document.getElementById('Formulario').reset();
+}

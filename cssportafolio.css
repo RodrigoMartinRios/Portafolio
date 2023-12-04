@@ -57,8 +57,7 @@ html{
 }
 /* SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, #050020, rgb(3, 14, 94)),
-    url(img/fondo.jpg);
+    background: linear-gradient(to top, #050020, rgb(3, 14, 94));
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -76,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #050020;
+    border: 10px solid #170775;
     display: block;
     width: 80%;
     margin: auto;
@@ -380,7 +379,7 @@ html{
 }
 /* SECCION CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
+  
     background-color:#050020;
     color: #fff;
     padding: 50px 0;

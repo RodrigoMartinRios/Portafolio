@@ -9,7 +9,12 @@
     <script src="jq/jquery-3.7.1.min.js"></script>
     <script>
       $(document).ready(function(){
-        $("#portfolio").fadeIn(5000);
+        $('#portfolio').mouseenter(function(){
+         $(this).find('img').fadeIn(3000);
+        });
+
+        //ocultar imagenes
+        $('#portafolio img').hide();
       })
     </script>
 
@@ -71,11 +76,11 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3>Conocimiento Tecnico</h3>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
@@ -119,7 +124,7 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
+                    <h3>Habilidaes Profesionales</h3>
                     <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
@@ -204,15 +209,17 @@
             <div class="fila">
                 <!-- Formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <form id="Formulario">
+                    <input type="text" placeholder="Tú Nombre" id="nombre">
+                    <input type="text" placeholder="Número telefónico" id="telefono">
+                    <input type="text" placeholder="Dirección de correo" id="correo">
+                    <input type="text" placeholder="Tema" id="Tema">
+                    <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="button" onclick="mostrarDatos()">
                         Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
+                </form>
                 </div>
                 <div class="col">
                     <div class="info">
